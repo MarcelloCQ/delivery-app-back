@@ -8,7 +8,7 @@ import { AuthModule } from './auth/auth.module';
 @Module({
   imports: [TypeOrmModule.forRoot({
     type: "postgres",
-    url: '',
+    url: 'postgres://postgre:3rmwxJLqujbQzjoy8nXLneN4tgvqwy6u@dpg-clknmi4jtl8s73eell5g-a/deliveryapp_l5oc',
     synchronize: true,
     logging: true,
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
