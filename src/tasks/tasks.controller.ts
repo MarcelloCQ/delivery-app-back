@@ -9,7 +9,9 @@ import {
 } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { UpdateTaskDto, CreateTaskDto } from './task.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('tasks')
 @Controller('tasks')
 export class TasksController {
   constructor(private tasksService: TasksService) {}
